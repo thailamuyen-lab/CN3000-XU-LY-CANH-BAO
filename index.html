@@ -41,7 +41,17 @@ h2{font-size:1.5rem;margin:4px 0 16px;line-height:1.25}
 <div id="app"></div>
 <script>
 /* DÁN firebaseConfig CỦA BẠN VÀO ĐÂY (Firebase Console > Project settings > Your apps) */
-window.FIREBASE_CONFIG={apiKey:"PASTE_API_KEY",authDomain:"PASTE.firebaseapp.com",projectId:"PASTE",appId:"PASTE"};
+ const firebaseConfig = {
+  apiKey: "AIzaSyBzyR2j-ixAbc83bcJGFpP7twgrY_ycN90",
+  authDomain: "lam-uyen.firebaseapp.com",
+  projectId: "lam-uyen",
+  storageBucket: "lam-uyen.firebasestorage.app",
+  messagingSenderId: "894698953139",
+  appId: "1:894698953139:web:c43b57ca002dc088fd53c6",
+  measurementId: "G-R90VJ4BBZP"
+};
+
+window.FIREBASE_CONFIG=firebaseConfig;
 window.FB_ON=!/^PASTE/.test(window.FIREBASE_CONFIG.apiKey);
 </script>
 <script type="module">
